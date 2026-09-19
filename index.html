@@ -5,111 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="bungkus">
-        <div id="top">
-            <div id="logo">
-                <a href="#">
-                    <img src="images/web-development.png">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid px-0">
+                <a href="#" id="logo" class="navbar-brand">
+                    <img src="images/web-development.png" class="img-fluid" alt="logo">
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Product
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+        </nav>
+
+        <div id="banner" class="mt-2">
+            <img src="images/banner1.jpg" class="img-fluid rounded-3 w-100" alt="Banner">
+        </div>
+
+        <div id="highlight" class="row mt-3">
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                <img src="images/thor.jpg" class="img-fluid rounded-3 w-100" alt="Thor">
+            </div>
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                <img src="images/wick.jpg" class="img-fluid rounded-3 w-100" alt="John Wick">
+            </div>
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                <img src="images/ironman.jpg" class="img-fluid rounded-3 w-100" alt="Iron Man">
             </div>
         </div>
 
-        <div id="banner">
-            <img src="images/banner1.jpg">
-        </div>
-
-        <div id="highlight">
-            <div class="box">
-                <img src="images/thor.jpg">
+        <div id="content" class="row mt-4 align-items-center">
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                <img src="images/banner2.jpg" class="img-fluid rounded-3 w-100" alt="Content Image">
             </div>
-            <div class="box">
-                <img src="images/wick.jpg">
-            </div>
-            <div class="box">
-                <img src="images/ironman.jpg">
+            <div class="col-12 col-md-8">
+                <h3>Subtitle Here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio, quas aperiam laborum incidunt molestias earum magnam ratione at vel sequi velit fuga ipsa architecto officiis id error eius ea?</p>
             </div>
         </div>
 
-        <div id="about">
-            <div class="about-image">
-                <img src="images/banner2.jpg">
-            </div>
-            <div class="about-text">
-                <h2>Subtitle Here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus numquam maiores sapiente, maxime cumque tempore consequatur natus iste ut odio reiciendis commodi cupiditate dolorem veniam, accusantium id! Consequuntur, nobis optio?</p>
-            </div>
-        </div>
-
-        <div id="client">
+        <div id="clients" class="text-center mt-5">
             <h3>Our Client</h3>
-            <div class="client-list">
-                <img src="images/0.jpg">
-                <img src="images/1.jpg">
-                <img src="images/2.jpg">
-                <img src="images/3.jpg">
-                <img src="images/4.jpg">
-                <img src="images/5.jpg">
+            <div class="d-flex justify-content-between align-items-center mt-3 border-bottom pb-2">
+                <img src="images/1.jpg" class="client-img" alt="Client 1">
+                <img src="images/2.jpg" class="client-img" alt="Client 2">
+                <img src="images/3.jpg" class="client-img" alt="Client 3">
+                <img src="images/4.jpg" class="client-img" alt="Client 4">
+                <img src="images/5.jpg" class="client-img" alt="Client 5">
+                <img src="images/0.jpg" class="client-img" alt="Client 6">
             </div>
         </div>
 
-        <div id="testimonial">
+        <div id="testimonial" class="mt-4 text-center">
             <h3>Testimonials</h3>
-            <div class="testimonial-list">
-                <div class="testimonial-box">
-                    <img src="images/6.jpg">
-                    <h4>John Thor</h4>
-                    <p>Setelah menggunakan jasa perusahaan ini, saya menjadi seorang super hero yang memiliki kekuatan untuk mengendalikan petir. Keren banget kan.</p>
+            <div class="row mt-3 g-3">
+                <div class="col-12 col-md-6">
+                    <div class="testimonial-box">
+                        <img src="images/6.jpg" class="rounded-circle testimonial-img mb-2" alt="John Thor">
+                        <h4>John Thor</h4>
+                        <p>Setelah menggunakan jasa perusahaan ini, saya menjadi seorang super hero yang memiliki kekuatan untuk mengendalikan petir.</p>
+                    </div>
                 </div>
-                <div class="testimonial-box">
-                    <img src="images/7.jpg">
-                    <h4>Tony Stark</h4>
-                    <p>Setelah saya kuliah di UMN, saya jadi jenius banget dan bisa bikin Iron Man, saya jadi super hero paling tajir di jagar raya.</p>
+                <div class="col-12 col-md-6">
+                    <div class="testimonial-box">
+                        <img src="images/7.jpg" class="rounded-circle testimonial-img mb-2" alt="Tony Stark">
+                        <h4>Tony Stark</h4>
+                        <p>Setelah saya kuliah di UMN, saya jadi jenius banget dan bisa bikin Iron Man, saya jadi super hero paling tajir di jagad raya.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div id="newsletter">
-            <h3>Subscribe to our newletter to get the latest info</h3>
-            <input type="email" placeholder="Enter your email here...">
-
-            <br>
-
-            <button type="submit">Subscribe</button>
+        <div id="newsletter" class="p-4 text-center text-white my-4 rounded" style="background-color: #ff007f;">
+            <h3 class="fw-normal fs-5 mb-3 text-dark">Subscribe to our newsletter to get the latest info</h3>
+            <input type="email" class="form-control mx-auto newsletter-input" placeholder="Enter your email here...">
+            <button type="submit" class="btn btn-outline-light mt-3 fw-bold px-4">Subscribe</button>
         </div>
 
-        <div id="footer">
-            <div class="footer-left">
-                <h3>PT. Tajir Mampus Corporation Inc.</h3>
-                <p>
-                    Dark Science Boulevard<br>
-                    Blok A No. 45<br>
-                    Gading Serpong, Tangerang
-                </p>
-                <p>
-                    Tel: (021) 123456789
-                </p>
-            </div>
-
-            <div class="footer-right">
-                <div class="social">
-                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-                    <a href="#"><img src="images/youtube.png" alt="Youtube"></a>
+        <footer id="footer" class="bg-dark text-white p-4 rounded-3 mb-4">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8 text-center text-md-start mb-3 mb-md-0">
+                    <h6 class="fw-bold">PT. Tajir Mampus Corporation Inc.</h6>
+                    <p class="mb-1 small">Dark Science Boulevard<br>Blok A1 No. 45 Gading Serpong<br>Tangerang</p>
+                    <p class="mb-0 small">Tel: (021) 123456789</p>
                 </div>
-                <p>Copyright © 2022 | All rights reserved.</p>
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <div class="mb-2">
+                        <a href="#" class="text-white me-2"><img src="images/facebook.png" alt="Facebook" width="24"></a>
+                        <a href="#" class="text-white me-2"><img src="images/instagram.png" alt="Instagram" width="24"></a>
+                        <a href="#" class="text-white"><img src="images/youtube.png" alt="Youtube" width="24"></a>
+                    </div>
+                    <p class="mb-0 small">Copyright &copy; 2022 | All rights reserved.</p>
+                </div>
             </div>
-        </div>
+        </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYs0g+0Mhup+ILRH9SENBOOLRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
